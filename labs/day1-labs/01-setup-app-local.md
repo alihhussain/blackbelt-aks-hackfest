@@ -34,7 +34,7 @@ The underlying data store for the app is [MongoDB](https://www.mongodb.com/ "Mon
 
     ```bash
     # From the previous lab run the following command to change the mongoDB port
-    docker run --name mongo --net fabmedical -p 27019:27017 -d mongo
+    docker run --name mongo -p 27019:27017 -d mongo
 
     cd ~/blackbelt-aks-hackfest/app/db
 
