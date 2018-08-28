@@ -66,7 +66,7 @@ az aks scale -g $RESOURCE_GROUP_NAME -n $AKS_CLUSTER_NAME --node-count 3
 1. Check to see if the new nodes are deployed and "Ready"
 ```bash
 kubectl get nodes
-# You should see something like the following as output (there are now 4 nodes in the cluster):
+# You should see something like the following as output (there are now 3 nodes in the cluster):
 NAME                       STATUS    ROLES     AGE       VERSION
 aks-nodepool1-42552728-0   Ready     agent     5h        v1.7.7
 aks-nodepool1-42552728-1   Ready     agent     5h        v1.7.7
