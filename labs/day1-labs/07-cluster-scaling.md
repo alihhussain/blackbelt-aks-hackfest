@@ -53,17 +53,17 @@ aks-nodepool1-42552728-0   Ready     agent     4h        v1.7.7
 aks-nodepool1-42552728-1   Ready     agent     4h        v1.7.7
 ```
 2. Scale out AKS cluster to accomodate the demand
+    * Fetch the resourceGroup and AKS cluster name by running ```az aks list -o table```
+    * Run ```RESOURCE_GROUP_NAME=<YourResourceGroupName>``` to set the variable **RESOURCE_GROUP_NAME**
+    * Run ```AKS_CLUSTER_NAME=<YourClusterName>``` to set the variable **AKS_CLUSTER_NAME**
 ```bash
-# set these values to match yours (the cluster and the RG are the same name)
-RESOURCE_GROUP_NAME=$(az group list | jq '.[0]."name"' -r)
-AKS_CLUSTER_NAME="${RESOURCE_GROUP_NAME//_}"
-
+# Run the following command to scale the cluster
 az aks scale -g $RESOURCE_GROUP_NAME -n $AKS_CLUSTER_NAME --node-count 4
 ```
 
 > Note this may take some time. Good time to get some coffee. 
 
-3. Check to see if the new nodes are deployed and "Ready"
+1. Check to see if the new nodes are deployed and "Ready"
 ```bash
 kubectl get nodes
 # You should see something like the following as output (there are now 4 nodes in the cluster):
