@@ -58,7 +58,7 @@ aks-nodepool1-42552728-1   Ready     agent     4h        v1.7.7
     * Run ```AKS_CLUSTER_NAME=<YourClusterName>``` to set the variable **AKS_CLUSTER_NAME**
 ```bash
 # Run the following command to scale the cluster
-az aks scale -g $RESOURCE_GROUP_NAME -n $AKS_CLUSTER_NAME --node-count 4
+az aks scale -g $RESOURCE_GROUP_NAME -n $AKS_CLUSTER_NAME --node-count 3
 ```
 
 > Note this may take some time. Good time to get some coffee. 
