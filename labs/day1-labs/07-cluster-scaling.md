@@ -71,7 +71,6 @@ NAME                       STATUS    ROLES     AGE       VERSION
 aks-nodepool1-42552728-0   Ready     agent     5h        v1.7.7
 aks-nodepool1-42552728-1   Ready     agent     5h        v1.7.7
 aks-nodepool1-42552728-2   Ready     agent     7m        v1.7.7
-aks-nodepool1-42552728-3   Ready     agent     7m        v1.7.7
 ```
 
 4. Re-visit Grafana Dasboard to validate cluster scale is working.
