@@ -44,7 +44,7 @@ For the first container, we will be creating a Dockerfile from scratch. For the 
     ```
     cd ~/blackbelt-aks-hackfest/app/web
     
-    docker build --build-arg IMAGE_TAG_REF=v1 -t rating-web .
+    docker build -t rating-web .
     ```
 
 3. Validate image was created with `docker images`
