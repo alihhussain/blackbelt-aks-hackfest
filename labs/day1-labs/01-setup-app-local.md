@@ -94,4 +94,5 @@ Close the web and api apps in the terminal windows by hitting `ctrl-c` in each o
 ## Reference
 ```bash
 /mnt/c/Program\ Files/Docker/Docker/resources/bin/docker.exe run --name mongo -p 27019:27017 -d mongo
+https://nodesource.com/blog/installing-node-js-tutorial-ubuntu/
 ```
